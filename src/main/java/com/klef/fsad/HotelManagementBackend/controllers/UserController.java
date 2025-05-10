@@ -1,5 +1,6 @@
 package com.klef.fsad.HotelManagementBackend.controllers;
 import java.util.*;
+
 import com.klef.fsad.HotelManagementBackend.models.User;
 import com.klef.fsad.HotelManagementBackend.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    
 
     // Add your endpoints here
     // For example:
@@ -68,5 +70,4 @@ public class UserController {
         String password = credentials.get("password");
         return userService.login(email, password);
     }
-
 }
