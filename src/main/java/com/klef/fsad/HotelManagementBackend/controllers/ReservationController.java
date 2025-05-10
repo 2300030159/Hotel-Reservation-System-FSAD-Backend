@@ -9,7 +9,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/reservations")
-@CrossOrigin(origins = "*") // Optional: to allow access from different domains
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://hotel-reservation-system-fsad.vercel.app"
+})
 public class ReservationController {
 
     @Autowired

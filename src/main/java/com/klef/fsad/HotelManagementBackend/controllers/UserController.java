@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/api/user")
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://hotel-reservation-system-fsad.vercel.app"
+})
 public class UserController {
 
     @Autowired

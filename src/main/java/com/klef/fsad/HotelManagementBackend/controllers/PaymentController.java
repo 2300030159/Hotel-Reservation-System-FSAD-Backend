@@ -9,7 +9,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/payments")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://hotel-reservation-system-fsad.vercel.app"
+})
 public class PaymentController {
 
     @Autowired
